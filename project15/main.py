@@ -1,11 +1,10 @@
 import csv,os
 from datetime import datetime
 import requests
-from dotenv import load_dotenv
 
 FILENAME = 'weather_log.csv'
 
-API_KEY = os.getenv('API_KEY')
+API_KEY = 'a817a81bbb7a56d870e908e739b3ccdf'
  
 if not os.path.exists(FILENAME):
     with open(FILENAME,'w',newline='',encoding='utf-8')as f:
